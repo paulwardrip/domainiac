@@ -1,7 +1,10 @@
 {
   "name": "domainiac",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "main": "src/index.js",
   "license": "MIT",
-  "description": "utility for parsing domains"
+  "description": "utility for parsing domains",
+  "bin": {
+    "domainiac": "src/cli.js"
+  }
 }
