@@ -1,8 +1,10 @@
 {
 	const co = require("./iso-3166-1-alpha-2.json");
+	const sldata = require("./slds.json");
+	const zaschool = require("./za-school.json");
 
 	function country(tld) {
-		if (tld.length == 2 && (co[tld] || ["eu","ac","uk"].includes(tld))) {
+		if ((tld.length == 2 && co[tld]) || ["eu","ac","uk", "africa"].includes(tld)) {
 			return tld;
 		} else {
 			return "us";
@@ -10,43 +12,45 @@
 	}
 
 	let API = module.exports = {
-		extractDomain(hostname){
-			if (!hostname) return
-			let parts = hostname.toLowerCase().trim().split(".");
-			let tld = parts[parts.length-1];
-			let sld = parts[parts.length-2];
-			if (parts.length > 2 && tld.length === 2 && co[tld]) {
-				if ((sld.length <= 4 && sld.length >= 2) || tld === "fr") {
-					return [parts[parts.length-3],sld,tld].join(".");
-				}
-			}
-			return [sld,tld].join(".")
-		},
-		
 		extract(hostname) {
 			if (!hostname) return
 			let parts = hostname.toLowerCase().trim().split(".");
 			let tld = parts[parts.length-1];
 			let sld = parts[parts.length-2];
 			let c = country(tld);
-			let domain, subs;
-			if (c !== "us") {
-				if (["co", "com", "edu", "gov", "ne", "net", "or", "org"].includes(sld)){
-					tld = `${sld}.${tld}`
-					domain = parts[parts.length-3];
-					subs = parts.splice(0,parts.length-3)
-				} else {
-					domain = sld
-					subs = parts.splice(0,parts.length-2)
+			let domain, subs, showsld;
+			
+			let slmatch = sldata[tld];
+			if (tld === 'za' && zaschool.includes(sld)){
+				sld = `school.${sld}`
+				domain = parts[parts.length-4];
+				subs = parts.splice(0,parts.length-4)
+				showsld = {
+					suffix: `${sld}.${tld}`,
+					tld,
+					sld
+				}
+			} else if (slmatch && slmatch.includes(sld)){
+				domain = parts[parts.length-3];
+				subs = parts.splice(0,parts.length-3)
+				showsld = {
+					suffix: `${sld}.${tld}`,
+					tld,
+					sld
 				}
 			} else {
 				domain = sld
 				subs = parts.splice(0,parts.length-2)
+				showsld = {
+					suffix: tld,
+					tld
+				}
 			}
 			
 			return {
-				tld,
-				domain: `${domain}.${tld}`,
+				...showsld,
+
+				domain: `${domain}.${showsld.suffix}`,
 				name: domain,
 				subdomains: subs,
 				country: c

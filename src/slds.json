@@ -1,0 +1,82 @@
+
+{
+	"at": ["ac", "gv", "co", "or", "priv" ],
+
+	"au": ["com", "net", "org", "edu", "gov", "asn", "id", "csiro"],
+
+	"br": [ "9guacu", "abc", "adm", "adv", "agr", "aju", "am", "anani", "aparecida", "app", "arq", "art", "ato", 
+	  "b", "barueri", "belem", "bhz", "bib", "bio", "blog", "bmd", "boavista", "bsb", "campinagrande", "campinas",
+	  "caxias", "cim", "cng", "cnt", "com", "contagem", "coop", "coz", "cuiaba", "curitiba", "def", "des", "det",
+	  "dev", "ecn", "eco", "edu", "emp", "enf", "eng", "esp", "etc", "eti", "far", "feira", "flog", "floripa", 
+	  "fm", "fnd", "fortal", "fot", "foz", "fst", "geo", "ggf", "goiania", "gov", "gru", "imb", "ind", "inf", 
+	  "jab", "jampa", "jdf", "joinville", "jor", "jus", "leg", "lel", "log", "londrina", "macapa", "maceio", 
+	  "manaus", "maringa", "mat", "med", "mil", "morena", "mp", "mus", "natal", "net", "niteroi", "nom", "not",
+	  "ntr", "odo", "ong", "org", "osasco", "palmas", "poa", "ppg", "pro", "psc", "psi", "pvh", "qsl", "radio",
+	  "rec", "recife", "rep", "ribeirao", "rio", "riobranco", "riopreto", "salvador", "sampa", "santamaria",
+	  "santoandre", "saobernardo", "saogonca", "seg", "sjc", "slg", "slz", "sorocaba", "srv", "taxi", "tc",
+	  "tec", "teo", "the", "tmp", "trd", "tur", "tv", "udi", "vet", "vix", "vlog", "wiki", "zlg" ],
+
+	"dz": [ "com", "gov", "org", "edu", "asso", "pol", "art", "net", "tm", "soc" ],
+
+	"es": [ "com","nom","org","gob","edu" ],
+
+	"fr": [ "aeroport","avoues","cci","chambagri","chirurgiens-dentistes","experts-comptables","geometre-expert",
+		"greta","huissier-justice","medecin","notaires","pharmacien","port","veterinaire","prd" ],
+
+	"hu": [ "2000","agrar","bolt","city","co","casino","edu","film","forum","games","gov","hotel","info","ingatlan",
+		"jogasz","konyvelo","erotica","erotika","sex","szex","lakas","media","mobi","net","news","org","priv","reklam",
+		"shop","sport","suli","tm","tozsde","utazas","video" ],
+
+	"il": [ "ac","co","org","net","k12","gov","muni","idf" ],
+
+	"in": [ "co","com","firm","net","org","gen","ind","ernet","ac","edu","res","gov","mil","5g","6g","ai","am","bihar",
+		"biz","business","ca","cn","com","coop","cs","delhi","dr","er","gujarat","info","int","internet","io","me","pg",
+		"post","pro","travel","tv","uk","up","us" ],
+
+	"jp": [ "ac","ad","co","ed","go","gr","lg","ne","or" ],
+
+	"kr": [ "co","ne","or","re","pe","go","mil","ac","hs","ms","es","sc","kg","seoul","busan","daegu","incheon",
+		"gwangju","daejeon","ulsan","gyeonggi","gangwon","chungbuk","chungnam","jeonbuk","jeonnam","gyeongbuk",
+		"gyeongnam","jeju" ],
+
+	"lk": [ "gov","ac","sch","net","int","com","org","edu","ngo","soc","web","ltd","assn","grp","hotel" ],
+
+	"nz": [ "ac","co","geek","gen","kiwi","maori","net","org","school","cri","govt","health","iwi","mil","parliament" ],
+
+	"pk": [ "com","org","net","edu","res","gov","mil","gok","gob","gkp","gop","gos","gog","ltd","web","fam","biz" ],
+
+	"ru": [ "ac","com","edu","gov","int","mil","net","org","pp","adygeya","bashkiria","buryatia","ulan-ude","grozny",
+		"cap","dagestan","nalchik","kalmykia","kchr","karelia","ptz","khakassia","komi","mari-el","mari","joshkar-ola",
+		"mordovia","yakutia","vladikavkaz","kazan","tatarstan","tuva","izhevsk","udmurtia","udm","altai","kamchatka",
+		"khabarovsk","khv","kuban","krasnoyarsk","perm","marine","vladivostok","stavropol","stv","chita","amur",
+		"arkhangelsk","astrakhan","belgorod","bryansk","chelyabinsk","chel","ivanovo","irkutsk","koenig","kaluga",
+		"kemerovo","kirov","vyatka","kostroma","kurgan","kursk","lipetsk","magadan","mosreg","murmansk","nnov","nov",
+		"novosibirsk","nsk","omsk","orenburg","oryol","penza","pskov","rnd","ryazan","samara","saratov","sakhalin",
+		"yuzhno-sakhalinsk","e-burg","yekaterinburg","smolensk","tambov","tver","tomsk","tom","tsk","tula","tyumen",
+		"simbirsk","vladimir","volgograd","tsaritsyn","vologda","cbg","voronezh","vrn","yaroslavl","mos","msk","spb",
+		"bir","jar","chukotka","surgut","yamal","amursk","baikal","cmw","fareast","jamal","kms","k-uralsk","kustanai",
+		"kuzbass","magnitka","mytis","nakhodka","nkz","norilsk","snz","oskol","pyatigorsk","rubtsovsk","syzran",
+		"tlt","vdonsk" ],
+
+	"th": [ "ac","co","go","mi","or","net","in" ],
+
+	"tr": [ "gov","mil","tsk","k12","edu","av","dr","bel","pol","kep","com","net","org","info","bbs","nom","tv",
+		"biz","tel","gen","web","name" ],
+
+	"tt": [ "co","com","org","net","travel","museum","aero","tel","name","charity","mil","edu","gov" ],
+
+	"ua": [ "com","edu","gov","net","in","org","cherkasy","chernigov","chernivtsi","crimea","dnipropetrovsk",
+		"donetsk","ivano-frankivsk","kharkiv","kherson","khmelnitskiy","kirovograd","kyiv","lugansk","lutsk",
+		"lviv","nikolaev","odesa","poltava","rivne","sevastopol","sumy","ternopil","uzhgorod","vinnica","yalta",
+		"zaporizhzhe","zhitomir" ],
+		
+	"uk": [ "ac","bl","co","gov","judiciary","ltd","me","mod","net","nhs","nic","org","parliament","plc","police",
+		"rct","royal","sch","ukaea" ],
+
+	"us": [ "fed","isa","nsn","dni" ],
+
+	"zm": [ "ac","biz","co","com","edu","gov","info","mil","net","org","sch" ],
+
+	"za": [ "ac","co","edu","gov","law","mil","net","nom","org","web","alt","ngo","tm","agric","grondar","nis" ]
+
+}
