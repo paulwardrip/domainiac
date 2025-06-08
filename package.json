@@ -1,0 +1,7 @@
+{
+  "name": "domainiac",
+  "version": "0.9.1",
+  "main": "src/index.js",
+  "license": "MIT",
+  "description": "utility for parsing domains"
+}
