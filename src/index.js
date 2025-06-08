@@ -55,7 +55,7 @@
 
 		cookieMatchURL(url, cookieDomain, cookiePath) {
 			return url.includes(cookieDomain + cookiePath);
-		}
+		},
 
 		cookieDomain(domain){
 			if (domain)	return API.extractDomain(domain.startsWith(".") ? domain.substr(1) : domain);
