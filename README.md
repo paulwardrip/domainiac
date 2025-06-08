@@ -15,6 +15,7 @@ extract (domain) {
 
 	example ("mail.google.com"): {
 		tld: "com",
+  		suffix: "com",
 		name: "google",
 		domain: "google.com",
 		country: "us",
@@ -22,7 +23,9 @@ extract (domain) {
 	}
 
 	example ("flamenco.mail.plala.or.jp"): {
-		tld: "or.jp",
+		tld: "jp",
+  		sld: "or",
+    		suffix: "or.jp",
 		name: "plala",
 		domain: "plala.or.jp",
 		country: "jp",
