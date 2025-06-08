@@ -13,11 +13,19 @@ extract (domain) {
 	domain
 	subdomains[]
 
-	example (mail.google.com): {
+	example ("mail.google.com"): {
 		tld: "com",
 		name: "google",
 		domain: "google.com",
 		country: "us",
 		subdomains: ["mail"]
+	}
+
+	example ("flamenco.mail.plala.or.jp"): {
+		tld: "or.jp",
+		name: "plala",
+		domain: "plala.or.jp",
+		country: "jp",
+		subdomains: ["flamenco","mail"]
 	}
 }
